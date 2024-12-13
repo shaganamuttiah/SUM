@@ -638,3 +638,11 @@ img[src='shagana.jpg'] {
     transform: translateX(0);
   }
 }
+body, #threejs, #maplibre {
+  overflow: scroll; /* Allow scrolling */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar, #threejs::-webkit-scrollbar, #maplibre::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
