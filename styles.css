@@ -246,11 +246,13 @@ body {
 #maplibre {
   z-index: 1000; /* Slightly above for overlap */
   height: 110%; /* Full height of the container */
+   overflow: hidden; /* Prevent scrollbars */
 }
 
 #threejs {
   z-index: 2000; /* Below the map for overlap */
   margin: 0 -200px; /* Negative margin to create slight overlap */
+   overflow: hidden; /* Prevent scrollbars */
 }
 
 /* Buttons Container */
@@ -637,9 +639,4 @@ img[src='shagana.jpg'] {
   100% {
     transform: translateX(0);
   }
-}
-body, #threejs, #maplibre {
-  width: 100vw; /* Viewport width */
-  height: 100vh; /* Viewport height */
-  overflow: hidden; /* Prevent scrollbars */
 }
