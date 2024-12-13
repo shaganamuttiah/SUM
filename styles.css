@@ -639,10 +639,7 @@ img[src='shagana.jpg'] {
   }
 }
 body, #threejs, #maplibre {
-  overflow: scroll; /* Allow scrolling */
-  scrollbar-width: none; /* Firefox */
-}
-
-body::-webkit-scrollbar, #threejs::-webkit-scrollbar, #maplibre::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  width: 100vw; /* Viewport width */
+  height: 100vh; /* Viewport height */
+  overflow: hidden; /* Prevent scrollbars */
 }
